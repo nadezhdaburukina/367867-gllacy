@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Надежда Бурукина](https://up.htmlacademy.ru/htmlcss/17/user/367867).
-* Наставник: [Денис Власов].
+* Наставник: [Власов Денис] (https://htmlacademy.ru/profile/amaringo).
 
 ---
 
