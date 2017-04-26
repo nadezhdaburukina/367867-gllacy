@@ -1,0 +1,212 @@
+html,
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header-logo,
+.main-navigation,
+.user-block {
+  padding-top: 9px;
+}
+
+.header-logo {
+  float: left;
+  width: 154px;
+}
+
+.main-navigation {
+  float: left;
+  margin-left: 24px;
+  width: 349px;
+}
+
+.user-block {
+  float: right;
+  width: 267px;
+  margin-left: 352px;
+}
+
+.breadcrumbs {
+  float: left;
+  width: 267px;
+  margin-top: 25px;
+  margin-right: 612px;
+}
+
+.schedule {
+  float: right;
+  width: 267px;
+  margin-top: 20px;
+}
+
+.filter {
+  margin-bottom: 34px;
+}
+
+.sorting-block{
+  float: left;
+  width: 16.8%;
+  margin-right: 16px;
+}
+
+.price-block {
+  float: left;
+  width: 19%;
+  margin-right: 15px;
+}
+
+.fat-block {
+  float: left;
+  width: 36.1%;
+}
+
+.checkbox-area {
+  float: left;
+  width: 61.2%;
+  margin-right: 14px;
+}
+
+.buttons-filter {
+  float: left;
+  width: 12.4%;
+}
+
+.slider {
+  margin-bottom: 23px;
+}
+
+.promo {
+  margin-bottom: 40px;
+}
+
+.promo-left {
+  float: left;
+  width: 560px;
+  min-height: 229px;
+}
+
+.promo-right {
+  float: right;
+  width: 560px;
+  min-height: 229px;
+}
+
+.popular-gallery {
+  padding-bottom: 40px;
+}
+
+.gallery {
+  margin-bottom: 0px;
+}
+
+.gallery-item {
+  float: left;
+  width: 267px;
+  margin-right: 26px;
+}
+
+.gallery-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.features {
+  margin-bottom: 40px;
+  padding: 27px 21px;
+}
+
+.features li{
+  float: left;
+  width: 476px;
+}
+
+.technology {
+  
+}
+
+.producer {
+  margin-left: 83px;
+}
+
+.ingredients {
+  
+}
+
+.transportation {
+  margin-left: 83px;
+}
+
+.block-subscribe {
+  margin-bottom: 40px;  
+}
+
+.block-subscribe-left {
+  float: left;
+  width: 560px;
+  min-height: 220px;
+  background-image: url("");
+}
+
+.block-subscribe-right {
+  float: right;
+  width: 560px;
+  min-height: 220px;
+}
+
+.address-block {
+  float: right;
+  width: 303px;
+  min-height: 305px;
+}
+
+.main-footer {
+  padding-top: 19px;
+  padding-bottom: 25px;
+}
+
+.footer-social {
+  float: left;
+  width: 267px;
+  margin-right: 133px;
+}
+
+.footer-links {
+  float: left;
+  width: 326px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 189px;
+}
+
+.paginator {
+  float: right;
+  width: 190px;
+}
+
+div, 
+article, 
+header, 
+footer, 
+section, 
+a, 
+p, 
+span {
+  outline: 1px solid red;
+}
