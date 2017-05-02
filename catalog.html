@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700.." rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -29,9 +29,10 @@
            </ul>
         </nav>
         <div class="user-block">
-          <a class="search" href="#">Поиск</a>
+          <a class="search" href="#"></a>
           <a class="login" href="#">Вход</a>
-          <a class="basket" href="#">2 товара</a>
+          <a class="basket basket-catalog" href="#">2 товара</a>
+<!--
             <div class="cart">
               <table class="cart-items">
                 <tr class="item">
@@ -52,29 +53,29 @@
               <span class="cart-full-cost">Итого: 750 руб.</span>
               <a class="btn" href="#">Оформить заказ</a>
             </div>
+-->
         </div>
-        <div class="breadcrumbs">
-          <a href="index.html">Главная</a>
-          <a href="#">Каталог</a>
-          <a href="#">Сливочное</a>
-        </div>
+        
         <div class="schedule">
           <p>
             С 10 до 20, ежедневно
-            <span>
-              <a href="tel:+78124502525">8 812 450-25-25</a>
-            </span>
+            <a href="tel:+78124502525">8 812 450-25-25</a>
           </p>
         </div>
       </div>
     </header>  
     <main class="container">
-      <h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Главная</a>
+        <a href="#">Каталог</a>
+        <a href="#">Сливочное</a>
+      </div>
+      <h1 class="page-title">
         Сливочное мороженое
       </h1>
       <form action="https://echo.htmlacademy.ru" method="post" oninput="=" class="filter clearfix">
         <div class="sorting-block">
-          <label for="sorting">Сортировка</label>
+          <label for="sorting">Сортировка:</label>
           <select name="sorting">
             <option value="popular">по популярности</option>
             <option value="inexpensive">сначала недорогие</option>
