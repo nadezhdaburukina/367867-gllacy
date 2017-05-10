@@ -110,29 +110,29 @@
           <a class="btn" href="#">Хочу шоколадки!</a>
         </div>
       </section>
-      <section class="popular-gallery clearfix">
+      <section class="popular-gallery hit clearfix">
         <article class="gallery-item">
           <img src="img/product1.png" alt="Сливочное с апелисьновым джемом и цитрусовой стружкой" width="267" height="267">
           <b>310 <span>/кг</span></b>
-          <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <p><a class="ice-cream-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article> 
         <article class="gallery-item">
           <img src="img/product2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
           <b>380 <span>/кг</span></b> 
-          <p>Сливочно-кофейное с кусочками шоколада</p>
+          <p><a class="ice-cream-name">Сливочно-кофейное с кусочками шоколада</a></p>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
         <article class="gallery-item">
           <img src="img/product3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           <b>355 <span>/кг</span></b>
-          <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <p><a class="ice-cream-name">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article> 
         <article class="gallery-item">
           <img src="img/product4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
           <b>415 <span>/кг</span></b> 
-          <p>Сливочное крем-брюле с карамельной подливкой</p>
+          <p><a class="ice-cream-name">Сливочное крем-брюле с карамельной подливкой</a></p>
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
       </section>
@@ -174,8 +174,8 @@
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
             </p>
             <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-              <label for="email">Электронная почта</label>
-              <input type="email" id="email"  required>
+              <label for="email-subscribe">Электронная почта</label>
+              <input type="email" id="email-subscribe"  required>
              <button class="btn" type="submit">Отправить</button>
             </form>
           </div>
@@ -220,9 +220,9 @@
         <div class="footer-links">
           <ul>
             <li><a href="#" class="heart">Для поставщиков</a></li>
-            <li><a href="#">Наши докуметы</a></li>
+            <li><a href="#">Наши документы</a></li>
             <li><a href="#">О производстве</a></li>
-            <li><a href="#">Экологические стандарты</a></li>
+            <li><a href="#" class="standard">Экологические стандарты</a></li>
           </ul>
         </div>   
         <div class="footer-copyright">
@@ -234,18 +234,20 @@
         </div>
       </div>
     </footer>
+<!--
     <form  class="feedback" action="https://echo.htmlacademy.ru" method="post"> 
       <h3>Мы обязательно вам ответим!</h3>
         <div class="feedback-form-group">
           <label for="fullname">Как вас зовут?</label>
-          <input type="text" name="fullname" id="fullname" placeholder="Как вас зовут?" required>
-          <label for="email">Ваша почта для ответа?</label>
-          <input type="text" name="email" id="email" placeholder="Ваша почта для ответа?" required>
+          <input type="text" name="fullname" id="fullname"  required>
+          <label for="email-feedback">Ваша почта для ответа?</label>
+          <input type="text" name="email" id="emai-feedback" required>
           <label for="message">Напишите что-нибудь...</label>
-          <textarea name="message" id="message" placeholder="Напишите что-нибудь..." required></textarea>
+          <textarea name="message" id="message" required></textarea>
         </div>
       <input type="submit" class="btn" value="Отправить">  
     </form>
+-->
      </div>
     </div>
   </body>
