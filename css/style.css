@@ -40,24 +40,37 @@ body > input[type="radio"] {
   padding-top: 23px;
 }
 
-.main-navigation ul {
+.main-navigation .menu {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
 }
 
-.main-navigation li {
+.menu > li {
   display: inline-block;
   font-size: 16px;
   line-height: 22px;
   font-weight: bold;
   vertical-align: middle;
-  margin-right: 3px;
-  
+  margin-right: 3px; 
+  position: relative
 }
 
-.main-navigation a {
+.sub-menu {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #f8f7f4;
+    width: 145px;
+    top: 38px;
+    left: -6px;
+    color: #323232;
+    border-radius: 5px;
+}
+
+.menu  a {
   display: block;
   padding: 5px 13px;
   color: #ffffff;
@@ -74,6 +87,13 @@ body > input[type="radio"] {
 .main-navigation .active {
   background-color: #d07058;
   border-radius: 15px;
+}
+
+.sub-menu a {
+   color: #323232;
+   font-size: 14px;
+   line-height: 16px;
+   font-weight: normal;
 }
 
 .user-block {
@@ -224,6 +244,7 @@ a.basket-catalog {
   margin-top: 15px;
   font-size: 0px;
   padding-top: 5px;
+  margin-bottom: -1px;
 }
 
 .breadcrumbs a{
@@ -254,25 +275,101 @@ a.basket-catalog {
 }
 
 .filter h2,
-.filter label {
+.sorting-block label {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
   margin-top: 0px;
+  padding-top: 0px;
   text-indent: 15px;
+}
+
+.sorting-block label {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 2px;
 }
 
 .sorting-block {
   float: left;
   width: 16.8%;
   margin-right: 16px;
+  margin-bottom: 15px;
 }
 
+.sorting-block select {
+  border: none;
+  padding: 9px 13px;
+  border-radius: 17px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.sorting-block select:hover {
+   color: #323232;
+   background-color: #ffffff;
+}
 
 .price-block {
   float: left;
   width: 19%;
   margin-right: 16px;
+  margin-bottom: 15px;
+}
+
+.price-block h2 {
+  margin-bottom: 7px;
+}
+
+.price-block .price1 {
+  position: relative;
+  width: 218px;
+  min-height: 36px;
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 17px;
+}
+
+.price-block .price2 {
+  position: absolute;
+  width: 188px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.50);
+  top: 16px;
+  left: 15px;
+  cursor: pointer;
+}
+
+.price-block .price3 {
+  position: relative;
+  width: 108px;
+  height: 4px;
+  background-color: #ffffff;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.price3::before,
+.price3::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.price3::before {
+  top: -9px;
+  left: -5px; 
+}
+
+.price3::after {
+  top: -9px;
+  left: 93px; 
 }
 
 .fat-block {
@@ -280,13 +377,27 @@ a.basket-catalog {
   width: 36.1%;
 }
 
-.fat-block h2,
-.checkbox-area h2 {
-  padding: 0px;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  text-indent: 15px;
+.fat-block h2 {
+  margin-bottom: 13px;
+}
+
+.fat-block input {
+  display: none;
+}
+
+.fat-block label {
+  margin-left: 46px;
+  position: relative;
+}
+
+.fat-block label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #323232;
+  top: 0px;
+  left: -30px;
 }
 
 .checkbox-area {
@@ -806,6 +917,9 @@ btn:active {
   height: 40px;
   margin-left: 15px;
   border-radius: 5px;
+  border-style: solid;
+  border-color: #d3d3d2;
+  border-width: 1px;
 } 
 
 .appointment-form label {
@@ -819,8 +933,11 @@ btn:active {
 }
 
 .appointment-form .btn {
-  margin-left: 7px;
-  padding: 9px 15px;
+  border: none;
+  margin-left: 9px;
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .location {
@@ -880,7 +997,7 @@ btn:active {
   color: #ffffff; 
   font-size: 13px;
   line-height: 18px;
-  
+  padding-bottom: 25px;
 }
 
 .footer-social {
@@ -943,24 +1060,33 @@ btn:active {
   font-size: 0px;
   vertical-align: top;
   margin: 0px;
+  padding-left: 28px;
 }
 
+.footer-links li:last-child {
+  padding-left: 40px;
+}
+
+/*
 .footer-links li:nth-child {
   margin-right: 0px; 
 }
+*/
 
 .footer-links a{
   text-decoration: none;
   color: #ffffff; 
   font-size: 13px;
   line-height: 18px;
-  padding-left: 28px;
+/*  padding-left: 28px;*/
   border-bottom: 1px solid rgba(255, 255, 255, 0.20);
 }
 
+/*
 .footer-links .standard {
   padding-left: 40px;
 }
+*/
 
 .footer-links .heart{
   font-weight: bold;
@@ -971,7 +1097,7 @@ btn:active {
   content: "";
   position: absolute;
   top: 2px;
-  left: 4px;
+  left: -23px;
   width: 32px;
   height: 23px;
   background: url("../img/spritesheet.png") no-repeat;
@@ -1006,7 +1132,6 @@ btn:active {
 .footer-copyright a:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.20);
 }
-
 
 .paginator {
   float: right;
@@ -1055,9 +1180,8 @@ btn:active {
 }
 
 .paginator a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-   border-radius: 100px;
-  
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 100px; 
 }
 
 hr {
@@ -1088,7 +1212,6 @@ hr {
 }
 
 
-/*
 div, 
 article, 
 header, 
@@ -1099,4 +1222,3 @@ p,
 span {
   outline: 1px solid red;
 }
-*/
