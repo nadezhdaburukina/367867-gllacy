@@ -39,27 +39,28 @@
            </ul>
         </nav>
         <div class="user-block">
-          <a class="search" href="#"></a>
+          <a class="search" href="#">
             <div class="form-search">  
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label for="search"></label>  
                 <input type="search" name="search" autofocus placeholder="Что ищем?">
               </form>
             </div>
+            </a>
           <a class="login" href="#">Вход</a>
-<!--
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="email">Электронная почта:</label>
-              <input type="text" name="email" id="email" placeholder="Электронная почта" required autofocus>
-              <label for="password-field">Пароль:</label>
-              <input type="password" name="password" id="password-field" placeholder="Пароль" required>
-              <a class="" href="#">Забыли пароль?</a>
-              <a class="" href="#">Новая регистрация</a>
-              <div class="btn">
-                <input type="submit" value="Войти">
-              </div>
-            </form>              
--->
+            <div class="login-form">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="email"></label>
+                <input type="text" name="email" id="email" placeholder="Электронная почта" required autofocus>
+                <label for="password-field"></label>
+                <input type="password" name="password" id="password-field" placeholder="Пароль" required>
+                <input type="submit" value="Войти" class="btn">
+                <ul class="login-links">
+                  <li><a class="" href="#">Забыли пароль?</a></li>
+                  <li><a class="" href="#">Новая регистрация</a></li>
+                </ul>
+              </form>
+            </div>
           <a class="basket" href="#">Пусто</a>
         </div>
         <div class="schedule">
