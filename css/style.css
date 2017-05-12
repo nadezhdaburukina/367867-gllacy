@@ -63,11 +63,48 @@ body > input[type="radio"] {
     padding: 0;
     list-style: none;
     background: #f8f7f4;
-    width: 145px;
+    width: 142px;
     top: 38px;
     left: -6px;
     color: #323232;
-    border-radius: 5px;
+    border-radius: 6px;
+    z-index: 2;
+    padding-bottom: 8px;
+    display: none;
+}
+
+.menu-catalog:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li:first-child {
+  padding-top: 5px;
+  padding-bottom: 7px;
+  position: relative;
+}
+
+.sub-menu li:first-child::after {
+  content: "";
+  width: 128px;
+  height: 1px;
+  position: absolute;
+  background-color: #d1d0ce;
+  top: 37px;
+}
+
+.sub-menu li {
+  padding: 0px;
+  padding-left: 6px;
+  padding-top: 5px; 
+}
+
+.sub-menu li:hover {
+  background-color: #fbded8;
+}
+
+.sub-menu li:first-child:hover {
+  background-color: #f8f7f4;
+  border-radius: 6px;
 }
 
 .menu  a {
@@ -79,7 +116,7 @@ body > input[type="radio"] {
 }
 
 .main-navigation a:hover {
-  background: #ffffff;
+  background: #f8f7f4;
   border-radius: 15px;
   color: #323232;
 }
@@ -89,11 +126,30 @@ body > input[type="radio"] {
   border-radius: 15px;
 }
 
+.sub-menu a:hover {
+  background-color: #fbded8;
+}
+
 .sub-menu a {
    color: #323232;
    font-size: 14px;
    line-height: 16px;
    font-weight: normal;
+}
+
+.sub-menu .novelty {
+  font-weight: bold;
+}
+
+.menu-catalog::after {
+  content: "";
+  width: 86px;
+  height: 10px;
+  position: absolute;
+}
+
+.sub-menu .novelty:hover {
+  background-color: #f8f7f4;
 }
 
 .user-block {
@@ -141,6 +197,31 @@ body > input[type="radio"] {
   height: 23px;
   background: url("../img/spritesheet.png") no-repeat;
   background-position: -5px -794px;
+}
+
+.form-search {
+  position: absolute;
+  top: 59px;
+  right: 256px;
+  padding: 20px 15px;
+  border-radius: 7px;
+  background-color: #f8f7f4;
+  z-index: 2;
+  display: none;
+}
+
+.form-search input {
+  border: solid;
+  border-color: #d3d3d2;
+  border-width: 1px;
+  border-radius: 7px;
+  width: 311px;
+  height: 44px;
+  padding-left: 14px;
+}
+
+.search:hover .form-search {
+  display: block;
 }
 
 .login {
@@ -1212,6 +1293,7 @@ hr {
 }
 
 
+/*
 div, 
 article, 
 header, 
@@ -1222,3 +1304,4 @@ p,
 span {
   outline: 1px solid red;
 }
+*/
